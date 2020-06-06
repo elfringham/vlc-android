@@ -136,6 +136,7 @@ if [ ! -d "vlc" ]; then
     echo "VLC source not found, cloning"
     git clone git://git.videolan.org/vlc.git vlc
     checkfail "vlc source: git clone failed"
+    git checkout ecfd0b7
 else
     echo "VLC source found"
     cd vlc
